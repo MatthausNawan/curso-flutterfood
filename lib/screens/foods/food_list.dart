@@ -3,6 +3,7 @@ import 'package:flutterfood/models/Category.dart';
 import 'package:flutterfood/models/Food.dart';
 import 'package:flutterfood/screens/foods/widgets/categories.dart';
 import 'package:flutterfood/widgets/food_card.dart';
+import 'package:flutterfood/widgets/main_navigator.dart';
 
 class FoodListScreen extends StatefulWidget {
   @override
@@ -50,6 +51,36 @@ class _FoodListScreenState extends State<FoodListScreen> {
         price: '12.25',
         title: 'Pizza G Frango',
         image: ''),
+    Food(
+        id: '1',
+        description: 'Um produto mto bom',
+        price: '12.25',
+        title: 'Pizza G Frango',
+        image: ''),
+    Food(
+        id: '1',
+        description: 'Um produto mto bom',
+        price: '12.25',
+        title: 'Pizza G Frango',
+        image: ''),
+    Food(
+        id: '1',
+        description: 'Um produto mto bom',
+        price: '12.25',
+        title: 'Pizza G Frango',
+        image: ''),
+    Food(
+        id: '1',
+        description: 'Um produto mto bom',
+        price: '12.25',
+        title: 'Pizza G Frango',
+        image: ''),
+    Food(
+        id: '1',
+        description: 'Um produto mto bom',
+        price: '12.25',
+        title: 'Pizza G Frango',
+        image: ''),
   ];
 
   @override
@@ -61,6 +92,7 @@ class _FoodListScreenState extends State<FoodListScreen> {
           style: TextStyle(color: Colors.white),
         ),
       ),
+      bottomNavigationBar: MainNavigator(1),
       backgroundColor: Theme.of(context).backgroundColor,
       body: _buildPageUI(context),
     );

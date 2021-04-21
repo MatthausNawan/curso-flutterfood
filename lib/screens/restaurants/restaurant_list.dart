@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterfood/screens/restaurants/widgets/restaurant_item_list.dart';
+import 'package:flutterfood/widgets/main_navigator.dart';
 import '../../models/Restaurant.dart';
 
 class RestaurantListScreen extends StatefulWidget {
@@ -33,6 +34,7 @@ class _RestaurantListScreenState extends State<RestaurantListScreen> {
         title: Text('Restaurantes'),
         centerTitle: true,
       ),
+      bottomNavigationBar: MainNavigator(0),
       backgroundColor: Theme.of(context).backgroundColor,
       body: _buildRestaurants(context),
     );
